@@ -16,37 +16,69 @@ $sponsors = mysqli_query($conn, "SELECT * FROM sponsors");
     <link rel="stylesheet" href="styles.css">
     <title>NUST Annual Programming Competition</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            background
+        
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            position: relative;
+            z-index: 1;
         }
-        h1 {
-            color: #2c3e50;
+
+        header h1 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        h2 {
-            color: #2980b9;
+
+        nav {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
         }
-        h3 {
-            color: #27ae60;
+
+        nav ul {
+            text-align: center;
+            background: linear-gradient(blue, red);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            transition: background 0.5s ease;
         }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
+
+        nav ul li {
+            display: inline-block;
         }
-        p {
-            margin-bottom: 15px;
+
+        nav ul li a {
+            padding: 18px;
+            font-family: "Open Sans", sans-serif;
+            text-transform: uppercase;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease, background 0.3s ease;
         }
-        footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #7f8c8d;
+
+        nav ul li a:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(0, 35, 122, 0.7);
+        }
+        .logo {
+            display: block;
+            margin: 20px auto; /* Center the logo */
+            height: 100px; /* Set a specific height for the logo */
+            width: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
 <body>
+<img src="images/logo.gif" alt="Logo" class="logo"> 
     <header>
         <h1>NUST Annual Programming Competition</h1>
         <nav>

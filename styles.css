@@ -2,52 +2,38 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
-    padding: 20px;
-    
-    background: linear-gradient(rgba(255, 0, 0, 0.418),rgba(0, 0, 128, 0.466));
+    padding: 20px;    
+    background-color: #042bd83b;
 }
-
+.logo {
+    display: block;
+    margin: 20px auto; /* Center the logo */
+    height: 100px; /* Set a specific height for the logo */
+    width: auto; /* Maintain aspect ratio */
+}
 header {
-    background: #000dc2b4;
+    background: linear-gradient(rgb(8, 8, 78),rgb(151, 13, 13));
     color: white;
     padding: 10px 0;
     text-align: center;
     border-radius: 20px;
+    
 }
 
-nav {
-    max-width: 960px;
-    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-    margin: 0 auto;
-    padding: 60px 0;
-  }
-  
-  nav ul {
-    text-align: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-  }
-  
-  nav ul li {
-    display: inline-block;
-  }
-  
-  nav ul li a {
-    padding: 18px;
-    font-family: "Open Sans";
-    text-transform:uppercase;
-    color: rgba(0, 35, 122, 0.5);
-    font-size: 18px;
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    display: block;
-  }
-  
-  nav ul li a:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(0, 35, 122, 0.7);
-  }
-  
+}
 
 main {
     padding: 20px;

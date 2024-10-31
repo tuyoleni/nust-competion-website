@@ -6,44 +6,70 @@
     <link rel="stylesheet" href="styles.css">
     <title>About Us</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 2.5em;
             margin: 0;
-            padding: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+        nav {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
         }
-        h1 {
-            color: #2c3e50;
+
+        nav ul {
             text-align: center;
+            background: linear-gradient(red, blue);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            transition: background 0.5s ease;
         }
-        p {
-            line-height: 1.6;
-            color: #34495e;
+
+        nav ul li {
+            display: inline-block;
         }
-        .highlight {
-            background-color: #eafaf1;
-            padding: 10px;
-            border-left: 5px solid #27ae60;
-            margin: 20px 0;
+
+        nav ul li a {
+            padding: 18px;
+            font-family: "Open Sans", sans-serif;
+            text-transform: uppercase;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease, background 0.3s ease;
         }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #7f8c8d;
+
+        nav ul li a:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(0, 35, 122, 0.7);
+        }
+         .logo {
+            display: block;
+            margin: 25px auto; /* Center the logo */
+            height: 150px; /* Set a specific height for the logo */
+            width: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
 <body>
     <header>
+    <img src="images/logoo.png" alt="Logo" class="logo"> 
         <h1>NUST Annual Programming Competition</h1>
         <nav>
             <ul>
